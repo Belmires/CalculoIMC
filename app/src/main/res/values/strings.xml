@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Aula1709</string>
+    <string name="label_imc">O seu IMC e :</string>
+    <string name="label_resultado">Você esta:</string>
+    <string name="label_sintomas">Você pode sentir esses sintomas:</string>
+    <string name="btn_voltar">Voltar</string>
 </resources>
