@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.text.isNotEmpty as isNotEmpty
+import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         button_calculate_main.setOnClickListener {
             calculoIMC()
         }
+        button_clear_main.setOnClickListener {
+            editText_weight_main.text.clear()
+            editText_height_main.text.clear()
+        }
+
 
 
     }
@@ -51,9 +56,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         if(resulIMC.isNotEmpty() && sintomas.isNotEmpty()) {
+            val formatador = DecimalFormat(".##")
 
             val intent = Intent(this@MainActivity, AnswerActivity::class.java).apply {
-                putExtra("IMC", imc)
+                putExtra("IMC", formatador.format(imc))
                 putExtra("resulIMC", resulIMC)
                 putExtra("sintomas", sintomas)
 

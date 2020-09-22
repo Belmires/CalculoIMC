@@ -1,7 +1,12 @@
 <resources>
-    <string name="app_name">Aula1709</string>
-    <string name="label_imc">O seu IMC e :</string>
-    <string name="label_resultado">Você esta:</string>
-    <string name="label_sintomas">Você pode sentir esses sintomas:</string>
+    <string name="app_name">CalculoIMC</string>
+    <string name="label_imc">O seu IMC é</string>
+    <string name="label_resultado">Classificação</string>
+    <string name="label_sintomas">O que pode acontecer</string>
     <string name="btn_voltar">Voltar</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_limpar">Limpar</string>
+    <string name="labelPeso">Peso:</string>
+    <string name="labelAltura">Altura:</string>
+    <string name="todo">TODO</string>
 </resources>
